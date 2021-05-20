@@ -14,14 +14,14 @@ To build a Generative adversarial model(modified U-Net) which can generate artif
 ## Basics of a GAN
 
 ### Components of GAN
-<b>1. Discriminator :<b> A classifier network that identfies whether a generated data (say, image) is fake or not.<br><br>
-<b>2. Generator :<b> A network that generates fake data (say, image) from random noise samples. It's objective is to generate surreal data and fool the discriminator network.
+<b>1. Discriminator :</b> A classifier network that identfies whether a generated data (say, image) is fake or not.<br><br>
+<b>2. Generator :</b> A network that generates fake data (say, image) from random noise samples. It's objective is to generate surreal data and fool the discriminator network.
 ### Loss & Objective Function
-<b>1. Discriminator Loss = <b> The loss associated with classifying the real-image and the generated fake image. <br><br>
-<b>2. Generator Loss = <b> The loss associated with generating the fake image, to make it look surreal, .i.e. exclusively on the generator output. <br><br>
-<b>3. Objective Function <br>
+<b>1. Discriminator Loss = </b> The loss associated with classifying the real-image and the generated fake image. <br><br>
+<b>2. Generator Loss = </b> The loss associated with generating the fake image, to make it look surreal, .i.e. exclusively on the generator output. <br><br>
+<b>3. Objective Function </b> <br>
 ![alt text](obj_func.png)
 <br>
--> Here, we have to maximize the likelihood for discriminator being wrong
--> The discriminator tries to maximize the objective function (Gradient Ascent)
+-> Here, we have to maximize the likelihood for discriminator being wrong <br>
+-> The discriminator tries to maximize the objective function (Gradient Ascent) <br>
 -> The generator tries to minimize the objective function (Gradient Descent)
