@@ -25,3 +25,6 @@ To build a Generative adversarial model(modified U-Net) which can generate artif
 -> Here, we have to maximize the likelihood for discriminator being wrong <br>
 -> The discriminator tries to maximize the objective function (Gradient Ascent) <br>
 -> The generator tries to minimize the objective function (Gradient Descent)
+
+## Cycle GAN
+![alt text](cycle_gan.jpg)
